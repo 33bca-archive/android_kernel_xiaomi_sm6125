@@ -151,6 +151,12 @@ config THERMAL_GOV_POWER_ALLOCATOR
 	  Enable this to manage platform thermals by dynamically
 	  allocating and limiting power to devices.
 
+config THERMAL_SWITCH
+    bool "Support themral config switch"
+    default n
+    help
+	  Support themral config switch.
+
 config CPU_THERMAL
 	bool "generic cpu cooling support"
 	depends on CPU_FREQ
